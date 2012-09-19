@@ -1,0 +1,9 @@
+.main_board {
+	width: 425px;
+	height: 425px;
+	background: url(../img/bg.png);
+}
+
+td {
+	text-align: center;
+}
