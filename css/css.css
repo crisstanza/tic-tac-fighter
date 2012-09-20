@@ -1,9 +1,13 @@
 .main_board {
-	width: 425px;
-	height: 425px;
 	background: url(../img/bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-td {
-	text-align: center;
+.O {
+	background-image: url(../img/o.png);
+}
+
+.X {
+	background-image: url(../img/x.png);
 }
