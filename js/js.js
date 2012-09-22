@@ -6,7 +6,7 @@
 		return document.getElementById(id);
 	}
 	function show(element) {
-		return element.style.display = '';
+		return element.style.display = 'block';
 	}
 	function hide(element) {
 		return element.style.display = 'none';
@@ -86,8 +86,8 @@
 			}
 		}
 		//
-		var mainMessage = $('main_message');
-		hide(mainMessage);
+		hide($('main_message'));
+		show($('main_board'));
 	}
 	//
 	function checkGameOver() {
