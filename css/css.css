@@ -1,6 +1,8 @@
 body {
-	font-family: Arial;
+	font-family: sans-serif;
 	color: #333;
+	background: url(../img/bg-full.png);
+	background-repeat: no-repeat;
 }
 
 /*    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    */
@@ -17,8 +19,8 @@ body {
 
 .main_message {
 	background-color: rgba(100, 100, 100, 0.5);
-	width: 306px;
-	height: 306px;
+	width: 629px;
+	height: 351px;
 	line-height: 333px;
 	border: 1px solid black;
 	text-align: center;
@@ -52,6 +54,8 @@ body {
 /*    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    */
 
 .main_board_top {
+	padding-top: 7px;
+	padding-bottom: 7px;
 	width: 620px;
 	text-align: center;
 }
@@ -67,8 +71,13 @@ td.counter {
 div.life {
 	width: 200px;
 	height: 25px;
-	border: 1px solid black;
+	border: 1px solid gray;
 	background-color: yellow;
+}
+div.life_red {
+	width: 0;
+	height: 25px;
+	background-color: red;
 }
 td.life {
 	padding-bottom: 12px;
