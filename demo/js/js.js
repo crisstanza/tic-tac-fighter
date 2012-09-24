@@ -27,7 +27,7 @@
 				case 'X':
 					this.currentPlayer = 'O';
 					break;
-			}					
+			}
 		},
 		checkGameOver: function() {
 
@@ -51,6 +51,14 @@
 		switch(currentClass) {
 			case '':
 				cell.setAttribute('class', myGame.currentPlayer);
+				//
+				var opponentMeter = $('lif_red_'+(myGame.currentPlayer == 'X' ? 'O' : 'X'));
+				var currentWidth = opponentMeter.style.width ? (opponentMeter.style.width).replace(/px/ , '') : 0;
+				var newWidth = new Number(currentWidth) + 40;
+				opponentMeter.style.width = newWidth + 'px';
+				//
+			    var sound = $('punch_' + Math.round(Math.random()+1));
+    			sound.play();    
 				//
 				var isGameOver = myGame.checkGameOver();
 				if ( isGameOver ) {
@@ -88,6 +96,19 @@
 		//
 		hide($('main_message'));
 		show($('main_board'));
+		//
+		setInterval(
+			function() {
+				var counter = $('main_counter');
+				var count = new Number(counter.innerHTML);
+				if ( count > 0 ) {
+					count--;
+					counter.innerHTML = count;
+				} else {
+					// todo: stop loop
+				}
+			}, 1000
+		);
 	}
 	//
 	function checkGameOver() {
