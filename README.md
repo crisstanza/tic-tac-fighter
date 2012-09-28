@@ -1,4 +1,4 @@
-social-tic-tac-toe
-==================
+Tic Tac Fighter
+===============
 
 Tic-tac-toe Facebook game.
